@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-// import { Samsung } from 'src/product/samsung';
+import { Samsung } from 'src/product/samsung';
 
 @Component({
   standalone:true,
@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./samsung.component.css']
 })
 export class SamsungComponent implements OnInit {
-  
+  @Input() samsung:Samsung;
   constructor() { }
 
   ngOnInit() {
